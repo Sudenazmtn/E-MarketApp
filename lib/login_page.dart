@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_page4/loginPageUtil.dart';
+import 'package:flutter_application_1/login_page_util.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,7 +21,7 @@ class SignInPage extends StatefulWidget {
 }
 
 class _SignInPageState extends State<SignInPage> {
-  bool _isrememberMe = false; // Checkbox durumu için değişken
+  bool _isrememberMe = false; // variable for checkbox status
 
   @override
   Widget build(BuildContext context) {
@@ -102,7 +102,7 @@ class _SignInPageState extends State<SignInPage> {
               ElevatedButton(
                 onPressed: () {
                   print(
-                      "${LoginPageUtil.rememberMe}: $_isrememberMe"); // Konsolda durumu yazdır
+                      "${LoginPageUtil.rememberMe}: $_isrememberMe"); // prints status on console
                 },
                 child: Text(LoginPageUtil.signInButton),
                 style: LoginPageStyle.signInButton,
@@ -116,7 +116,7 @@ class _SignInPageState extends State<SignInPage> {
 
   void updateRememberMeSelection(bool? value) {
     setState(() {
-      _isrememberMe = value ?? false; // Değeri güncelle
+      _isrememberMe = value ?? false; // updates the value
     });
   }
 }

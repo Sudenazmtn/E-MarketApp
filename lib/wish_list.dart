@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_page4/loginPageUtil.dart';
+import 'package:flutter_application_1/login_page_util.dart';
 
 class WishList extends StatelessWidget {
   const WishList({Key? key}) : super(key: key);

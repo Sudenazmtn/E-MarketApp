@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:login_page4/login_page.dart';
-import 'package:login_page4/login_page2.dart';
+import 'package:flutter_application_1/login_page.dart';
+import 'package:flutter_application_1/wish_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const WishList(),
+      home: SignInPage(),
     );
   }
 }
