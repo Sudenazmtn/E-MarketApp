@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/login_page_util.dart';
+import 'package:flutter_application_1/wish_list_util.dart';
 
 class WishList extends StatelessWidget {
   const WishList({Key? key}) : super(key: key);
@@ -8,7 +8,7 @@ class WishList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(LoginPageUtil.appBarTitle),
+        title: Text(WishListUtil.appBarTitle),
         leading: IconButton(
             onPressed: () {}, icon: const Icon(Icons.chevron_left_sharp)),
         actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.search))],
@@ -18,25 +18,25 @@ class WishList extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              LoginPageUtil.notFound,
+              WishListUtil.notFound,
               textAlign: TextAlign.justify,
-              style: LoginPageStyle.notFound,
+              style: WishListStyle.notFound,
             ),
             Text(
-              LoginPageUtil.wishListText,
+              WishListUtil.wishListText,
               textAlign: TextAlign.center,
               overflow: TextOverflow.visible,
-              style: LoginPageStyle.wishListText,
+              style: WishListStyle.wishListText,
             ),
             SizedBox(height: ProjectSpacer.height5),
             OutlinedButton(
-                style: LoginPageStyle.goShoppingButton,
+                style: WishListStyle.goShoppingButton,
                 onPressed: () {},
                 child: const SizedBox(
                     width: ProjectSpacer.width1,
                     child: Text(
-                      LoginPageUtil.goShopping,
-                      style: LoginPageStyle.goShopping,
+                      WishListUtil.goShopping,
+                      style: WishListStyle.goShopping,
                       textAlign: TextAlign.center,
                     ))),
           ],
