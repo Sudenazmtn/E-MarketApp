@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/wish_list_util.dart';
+import 'package:flutter_application_1/utils/wish_list_util.dart';
 
 class WishList extends StatelessWidget {
   const WishList({Key? key}) : super(key: key);
